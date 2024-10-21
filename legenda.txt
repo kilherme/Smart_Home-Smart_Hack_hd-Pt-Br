@@ -1,0 +1,2772 @@
+1
+00:00:00,000 --> 00:00:17,250
+*35C3 Musica de Abertura*
+
+2
+00:00:17,250 --> 00:00:23,510
+Herald: Então, a próxima palestra se chama 
+“Smart Home - Smart Hacks" 
+
+3
+00:00:23,510 --> 00:00:27,650
+Não sei vocês, sempre tenho 
+esses problemas de casa
+
+4
+00:00:27,650 --> 00:00:32,369
+mesmo assim, não tenho nada desses aparelhos 
+mesmo que meus dedos formiguem por isso.
+
+5
+00:00:32,369 --> 00:00:37,140
+Eu adoraria comprá-las, tem ótimas 
+coisas por aí. Mas não me atrevo 
+
+6
+00:00:37,140 --> 00:00:41,390
+e por isso fiquei muito feliz por 
+poder anunciar esta palestra hoje.
+
+7
+00:00:41,390 --> 00:00:45,260
+Assim eu saberei. Então,
+este é Michael Steigerwald e peço 
+
+8
+00:00:45,260 --> 00:00:48,755
+que dêem uma grande 
+salva de palmas. Obrigado.
+
+9
+00:00:48,755 --> 00:00:57,279
+*Aplausos*
+
+10
+00:00:57,279 --> 00:01:01,441
+Michael Steigerwald: Olá. hoje é sobre a lâmpada.
+Bem, na verdade não se trata apenas da lâmpada,
+
+11
+00:01:01,441 --> 00:01:05,210
+mas de quase todos os dispositivos 
+domésticos inteligentes 
+
+
+12
+00:01:05,210 --> 00:01:11,189
+que você possa imaginar, 
+porque quase tudo contém a mesma coisa. Então
+
+13
+00:01:11,189 --> 00:01:14,420
+por que escolhi a lâmpada É muito simples,
+
+14
+00:01:14,420 --> 00:01:17,261
+a lâmpada é o objeto mais simples
+como você pode imaginar,
+
+15
+00:01:17,261 --> 00:01:22,600
+é simplesmente um consumível. Antes 
+costumava ser só uma lâmpada, hoje 
+
+16
+00:01:22,600 --> 00:01:27,460
+tudo tem que ser inteligente e tem que 
+ter internet e nuvem em tudo. 
+
+17
+00:01:27,460 --> 00:01:31,090
+Se isso já estiver na lâmpada, 
+você pode pensar: 
+
+18
+00:01:31,090 --> 00:01:39,660
+Onde mais isso está? . Todo mundo tem medo 
+de aparelhos com câmeras e microfones.   
+
+
+19
+00:01:39,660 --> 00:01:43,010
+Descobriremos quais os perigos que
+
+20
+00:01:43,010 --> 00:01:50,070
+existem em tal lâmpada. É também sobre o fato de que
+
+21
+00:01:50,070 --> 00:01:56,590
+muitos provedores de nuvem onde você pode facilmente 
+
+22
+00:01:56,590 --> 00:02:01,869
+trazer qualquer dispositivo para a nuvem e não precisa de nenhum conhecimento 
+
+23
+00:02:01,869 --> 00:02:05,969
+eu dei uma olhada mais de perto em um provedor.
+E vamos ver o quão seguro é 
+
+24
+00:02:05,969 --> 00:02:10,750
+depois também fazer uma 
+prova de conceito de vários 
+
+25
+00:02:10,750 --> 00:02:22,920
+cenários de ataque e dizer quais consequências 
+isso tem para o usuário. Certo! Lê na imprensa
+
+26
+00:02:22,920 --> 00:02:29,220
+sobre isso o tempo todo,
+casa inteligente e sobre os perigos, 
+
+27
+00:02:29,220 --> 00:02:34,160
+o que pode acontecer e 
+assim por diante e até a Agência de Cybersegurança 
+
+28
+00:02:34,160 --> 00:02:40,231
+alertou sobre presentes inteligentes de Natal 
+antes do Natal. Principalmente 
+
+29
+00:02:40,231 --> 00:02:47,140
+na frente de câmeras e dispositivos com microfones.
+E como é Natal, pensei que 
+
+30
+00:02:47,140 --> 00:02:50,340
+também tinha uma lâmpada inteligente 
+
+31
+00:02:50,340 --> 00:02:55,280
+que gostaria de dar a alguém aqui.
+Por favor. Agarrou bem.
+
+32
+00:02:55,280 --> 00:02:59,730
+*Aplausos*
+
+33
+00:02:59,730 --> 00:03:04,300
+Sobre minha pessoa: Meu nome é Michael
+Steigerwald. Eu sou Desenvolvedor de Hardware
+
+34
+00:03:04,300 --> 00:03:09,670
+e software. Sou particularmente activo
+na área da investigação em segurança 
+
+35
+00:03:09,670 --> 00:03:15,030
+e a meio do ano fundei uma startup,
+a VTRUST GmbH, onde também 
+
+36
+00:03:15,030 --> 00:03:22,030
+cuidamos da segurança informática. 
+A motivação para a minha apresentação 
+
+37
+00:03:22,030 --> 00:03:28,270
+foi que um cliente que veio até nós
+querendo conectar seu dispositivo inteligente à nuvem 
+
+38
+00:03:28,270 --> 00:03:31,770
+e disse: 
+Essa não é a nossa especialidade. Conhecemos 
+
+39
+00:03:31,770 --> 00:03:35,510
+nosso produto, mas não a nuvem e
+não com a segurança associada e ela 
+
+40
+00:03:35,510 --> 00:03:39,820
+e perguntamos se poderíamos 
+ajudá-los a conectá-lo à nuvem.
+
+41
+00:03:39,820 --> 00:03:43,930
+E, claro, como sempre faz, 
+você dá uma olhada ao redor.
+
+
+42
+00:03:43,930 --> 00:03:47,380
+E aí? Já existem soluções prontas? 
+Existe algo no mercado que você
+
+43
+00:03:47,380 --> 00:03:53,730
+possa usar pra isso? E então me 
+deparei com um fornecedor que era ótimo,
+
+44
+00:03:53,730 --> 00:03:59,260
+sim, que já havia trazido mais 
+de 11 mil produtos diferentes para a nuvem.
+
+45
+00:03:59,260 --> 00:04:05,730
+Com mais de 10.000 fabricantes 
+em 200 países e mais de 20 bilhões
+
+46
+00:04:05,730 --> 00:04:15,170
+de solicitações por dia. As promessas 
+deste fabricante também são muito grandes,
+
+47
+00:04:15,170 --> 00:04:19,150
+ele fala de um desenvolvimento rápido 
+e que você pode fazer uma demonstração 
+
+48
+00:04:19,150 --> 00:04:23,170
+em apenas seis horas e iniciar 
+a produção em massa em apenas 15 dias. 
+
+
+49
+00:04:23,170 --> 00:04:27,150
+Isso parece muito pouco, mas na verdade 
+eu investiguei um pouco e realmente é.
+
+50
+00:04:27,150 --> 00:04:33,820
+Podem usar a tecnologia para conectar 
+seus dispositivos à Internet muito rapidamente.
+
+
+51
+00:04:33,820 --> 00:04:38,970
+E o que eu realmente gostei, claro,
+foi que eles prometem segurança de
+
+
+52
+00:04:38,970 --> 00:04:48,020
+nível militar e falaremos disso mais tarde.
+Então, o primeiro passo é se cadastrar.
+
+
+53
+00:04:48,020 --> 00:04:52,310
+Isso foi feito em 5 minutos
+e depois, você pode começar 
+
+54
+00:04:52,310 --> 00:04:59,110
+e criar seus dispositivos ou
+escolher entre um grande portfólio. Um App OEM
+
+55
+00:04:59,110 --> 00:05:04,350
+para instalar é também bem fácil.
+Você pode simplesmente personalizar o aplicativo existente
+
+56
+00:05:04,350 --> 00:05:08,230
+com seus logotipos e cores 
+e colocá-lo na Internet e 
+
+57
+00:05:08,230 --> 00:05:15,630
+nas Play Stores e Apple Store em pouco tempo.
+Isso era gratuito há seis meses.
+
+58
+00:05:15,630 --> 00:05:18,722
+Agora custa US$ 1.500 ou mais,
+mas você definitivamente 
+
+59
+00:05:18,722 --> 00:05:24,330
+não pode programar um aplicativo 
+com esse dinheiro. Depois de fazer isso, 
+
+60
+00:05:24,330 --> 00:05:29,800
+você pode simplesmente solicitar 
+módulos prontos e/ou dispositivos prontos diretamente.
+
+61
+00:05:29,800 --> 00:05:35,500
+Por exemplo, você pode encomendar 
+essas lâmpadas diretamente,
+
+62
+00:05:35,500 --> 00:05:42,970
+imprimir sua própria logo nelas e
+então se tornar um fornecedor de IoT.
+
+63
+00:05:42,970 --> 00:05:51,330
+Certo. Então. Agora, 
+quando cliquei neste formulário da web, 
+
+
+64
+00:05:51,330 --> 00:05:55,740
+encontrei uma página que 
+me deixou um pouco desconfiado. 
+
+65
+00:05:55,740 --> 00:06:04,180
+Tem atualizações de firmware e tem 
+os pontos de atualização silenciosa e atualização forçada. 
+
+66
+00:06:04,180 --> 00:06:09,180
+Então pensei, ok, como faz pra
+atualizar para uma lâmpada? Em geral, 
+
+67
+00:06:09,180 --> 00:06:12,310
+pode ser possível através do aplicativo 
+ou algo assim,mas ninguém 
+
+68
+00:06:12,310 --> 00:06:16,780
+sabe o que realmente acontece na lâmpada. 
+E eu já tinha encomendado 20 módulos para brincar,
+
+
+69
+00:06:16,780 --> 00:06:21,370
+mas até que sejam entregues da China, 
+pensei em usar apenas 
+
+70
+00:06:21,370 --> 00:06:26,060
+uma grande transportadora, 
+eles entregam no dia seguinte e 
+
+
+71
+00:06:26,060 --> 00:06:33,460
+encomendei várias lâmpadas 
+e também tomadas inteligentes
+
+72
+00:06:33,460 --> 00:06:41,650
+Certo. Então: como funciona? 
+Isso é simples. Você registra
+
+73
+00:06:41,650 --> 00:06:47,930
+a lâmpada com seu celular. Isso é bem
+rápido. Você o coloca no modo 
+
+
+74
+00:06:47,930 --> 00:06:54,620
+de configuração e então
+transfere a configuração 
+
+75
+00:06:54,620 --> 00:06:59,310
+e a lâmpada se conectará à nuvem 
+do fabricante via HTTP e MQTT. E
+
+76
+00:06:59,310 --> 00:07:06,380
+você pode desligá-la e ligá-la 
+porque o MQTT continua rodando
+
+77
+00:07:06,380 --> 00:07:10,889
+e talvez vocês não estejam familiarizados com ele:
+MQTT protocolo de mensagens baseado em padrões
+
+78
+00:07:10,889 --> 00:07:17,080
+ou conjunto de regras. Na verdade, 
+ele é usado em todos os dispositivos IoT.
+
+79
+00:07:17,080 --> 00:07:23,750
+Este é um protocolo sobre controlar 
+remotamente uma lâmpada que está em
+
+80
+00:07:23,750 --> 00:07:31,090
+algum lugar em uma rede privada. Isso significa 
+que a própria lâmpada se conecta 
+
+81
+00:07:31,090 --> 00:07:39,410
+ao servidor MQTT e pode então, sim, 
+enviar dados para dispositivos como o status ou 
+
+82
+00:07:39,410 --> 00:07:46,000
+também pode ser comutada por meio dele. Então, 
+agora o primeiro ponto era: o que 
+
+
+83
+00:07:46,000 --> 00:07:49,520
+realmente há nisso? Eu desmontei
+alguns diferentes.Na verdade, 
+
+
+84
+00:07:49,520 --> 00:07:54,290
+sempre encontrei um ESP8266. A maioria 
+das pessoas aqui conhece. É um
+
+85
+00:07:54,290 --> 00:07:59,540
+microcontrolador de 32 bits muito, 
+muito barato,com WLAN integrado 
+
+86
+00:07:59,540 --> 00:08:05,300
+e com 1 MB de flash e também é muito,
+muito fácil de ler. Isso significa 
+
+87
+00:08:05,300 --> 00:08:11,830
+que simplesmente encontrei os cinco
+pontos de contatos, soldei,
+
+88
+00:08:11,830 --> 00:08:15,590
+e conectei-os a uma porta serial. E então 
+pode-se simplesmente lê-lo com a ferramenta esp e
+
+89
+00:08:15,590 --> 00:08:22,740
+extrair o binário, sim, o firmware. 
+O que é muito importante é você ficar atento, 
+
+
+90
+00:08:22,740 --> 00:08:30,430
+pois nem sempre os fabricantes da China fazem dessa forma.
+
+91
+00:08:30,430 --> 00:08:37,070
+Isso significa, pode 
+ter uma fase no terra CC
+
+92
+00:08:37,070 --> 00:08:42,689
+e eu tive que descobrir isso 
+da maneira mais difícil. Também bem importanta: Atenção,
+
+93
+00:08:42,689 --> 00:08:50,749
+são 230 Volts. Então. Agora li o flash.
+Em geral é assim, tem partições 
+
+
+94
+00:08:50,749 --> 00:08:54,350
+diferentes, no começo um 
+bootloader que está na posição 0.
+
+95
+00:08:54,350 --> 00:08:58,930
+Há duas partições de usuário,
+em que está o firmware. Isso ocorre
+
+96
+00:08:58,930 --> 00:09:03,379
+porque há uma função de atualização,
+e se então por exemplo: user 1 é 
+
+97
+00:09:03,379 --> 00:09:08,089
+inicializado, o usuário 2 pode
+ser sobrescrito e revertido
+
+98
+00:09:08,089 --> 00:09:13,829
+então há uma partição de configuração 
+onde, a configuração é mantida, 
+
+99
+00:09:13,829 --> 00:09:22,850
+mesmo numa atualização. E então
+o que percebi é que meu SSID WiFi
+
+100
+00:09:22,850 --> 00:09:30,130
+e minha senha são armazenadas 
+sem criptografia na partição de configuração. Então 
+
+101
+00:09:30,130 --> 00:09:35,649
+novamente usaram segurança de nível militar.
+Você também pode pensar: 
+
+102
+00:09:35,649 --> 00:09:39,740
+O que há de tão ruim nisso?? 
+Pessoas que usam smart-lâmpadas 
+
+103
+00:09:39,740 --> 00:09:43,300
+no jardim de casa. O vizinho pode
+simplesmente pegar a lâmpada
+
+104
+00:09:43,300 --> 00:09:50,110
+e saber as senhas do WiFi.
+Há outros usos e
+
+105
+00:09:50,110 --> 00:09:53,029
+não há razão alguma para
+armazenar algo  assim
+
+106
+00:09:53,029 --> 00:09:58,910
+não criptografado no flash.
+Também encontrei várias chaves e códigos.
+
+107
+00:09:58,910 --> 00:10:05,300
+Por exemplo, tem o número de série,
+que também é formado a partir 
+
+108
+00:10:05,300 --> 00:10:10,810
+do endereço MAC e um prefixo,
+ depois tem a chave AUZ, 
+
+109
+00:10:10,810 --> 00:10:16,029
+que é uma chave que é 
+usada e que o fabricante conhece
+
+110
+00:10:16,029 --> 00:10:22,399
+o ou o provedor de nuvem sabe que é também 
+é um verdadeiro módulo dele. E há 
+
+
+111
+00:10:22,399 --> 00:10:28,619
+um ID do produto. Este ID do
+ produto é gerado quando o produto
+
+112
+00:10:28,619 --> 00:10:33,390
+é criado na nuvem. Ou seja, 
+anteriormente mostrei esta interface 
+
+113
+00:10:33,390 --> 00:10:38,339
+que pode criar produtos facilmente. E 
+quando eu crio, esse ID do produto 
+
+114
+00:10:38,339 --> 00:10:41,089
+é gerado e depois programado 
+no módulo pelo fabricante.
+
+115
+00:10:41,089 --> 00:10:46,610
+Há também uma chave local e uma chave sec, 
+que é exatamente como foi chamada 
+
+
+116
+00:10:46,610 --> 00:10:51,629
+no arquivo Jason no Flash. Eles são 
+responsáveis ​​por criptografar e
+
+117
+00:10:51,629 --> 00:10:58,790
+assinar as comunicações. 
+Como na verdade só comprei produtos 
+
+118
+00:10:58,790 --> 00:11:04,459
+de um fornecedor terceirizado, 
+pensei sobre isso: Como posso 
+
+119
+00:11:04,459 --> 00:11:08,830
+roubar isso? E o que eu pensei foi, 
+escrever meu ID do produto no Flash 
+
+120
+00:11:08,830 --> 00:11:14,730
+no local onde está o ID do produto
+e então você tinha que corrigir 
+
+121
+00:11:14,730 --> 00:11:20,259
+o CheckSum - você também pode 
+fazer isso com a ferramenta da esp, 
+
+122
+00:11:20,259 --> 00:11:24,899
+ou aquela checksum esp padrão 
+e coloquei-a de volta na lâmpada 
+
+123
+00:11:24,899 --> 00:11:32,540
+e eis que: A lâmpada que comprei 
+estava na minha conta.Agora fiquei 
+
+
+124
+00:11:32,540 --> 00:11:38,230
+muito surpreso por ter 
+visto diretamente isso... sim, perfeito!
+
+
+125
+00:11:38,230 --> 00:11:42,579
+outra vez usaram a segurança de 
+nível militar. Mas fiquei muito
+
+
+126
+00:11:42,579 --> 00:11:49,470
+surpreso porque o endereço de 
+e-mail que usei para me cadastrar 
+
+127
+00:11:49,470 --> 00:11:54,139
+foi incluído no assunto. E aí eu 
+vi que se você entrar em detalhes 
+
+
+128
+00:11:54,139 --> 00:12:00,360
+tem muito mais informação.Portanto,
+há o endereço de e-mail vinculativo
+
+
+129
+00:12:00,360 --> 00:12:05,339
+com os números de série e assim por diante.
+Geralmente é um número de telefone celular, 
+
+
+130
+00:12:05,339 --> 00:12:10,160
+caso você tenha se registrado com seu 
+telefone celular. Oder es stehen zum
+
+131
+00:12:10,160 --> 00:12:15,709
+Ou, por exemplo, há também as coordenadas 
+e onde você esta. Agora não sei o porque 
+
+132
+00:12:15,709 --> 00:12:22,079
+o fabricante ou o revendedor
+Preciso saber onde minha lâmpada 
+
+
+133
+00:12:22,079 --> 00:12:29,569
+será usada?! Mas provavelmente 
+também há razões para isso.Assim se 
+
+134
+00:12:29,569 --> 00:12:36,720
+conhece quem liga e desliga
+e em que horario faz. Todos
+
+135
+00:12:36,720 --> 00:12:41,519
+conseguem ver isso também. E por padrão 
+você recebe apenas 7 dias de registros de seus clientes.
+
+
+136
+00:12:41,519 --> 00:12:48,620
+Mas se você quiser mais, você só precisa
+pedir. Depois, há ótimas estatísticas
+
+137
+00:12:48,620 --> 00:12:54,100
+onde você pode ver quantos
+clientes ativaram quais dispositivos
+
+138
+00:12:54,100 --> 00:13:01,050
+e quando, para que você possa 
+simplesmente aproveitar melhor o mercado. 
+
+139
+00:13:01,050 --> 00:13:06,139
+Para mim  isso foi um pouco estranho e o 
+meu cliente só precisava proteger
+
+140
+00:13:06,139 --> 00:13:11,240
+os dados dos seus clientes.
+E como não tenho ideia de quem 
+
+
+141
+00:13:11,240 --> 00:13:15,410
+pode acessar os dados, simplesmente
+escrevi um e-mail para o fabricante 
+
+142
+00:13:15,410 --> 00:13:20,790
+e perguntei se você poderia
+usar a tecnologia deles sem
+
+143
+00:13:20,790 --> 00:13:25,970
+que os dados fossem enviados 
+para a nuvem. Porque, como eu disse,
+
+144
+00:13:25,970 --> 00:13:30,800
+também não é bom para o meu cliente
+as coordenadas de seus clientes serem 
+
+145
+00:13:30,800 --> 00:13:39,440
+armazenadas na nuvem. A resposta foi: 
+Que não é possível usar esses
+
+
+146
+00:13:39,440 --> 00:13:46,709
+dispositivos IoT sem a nuvem e atroca 
+de dados. E eles me garantiram 
+
+147
+00:13:46,709 --> 00:13:53,689
+que estavam protegendo os dados
+"muito bem". E o que eles também 
+
+
+148
+00:13:53,689 --> 00:13:58,829
+fizeram foi: Imediatamente 
+me enviaram um documento 
+
+149
+00:13:58,829 --> 00:14:06,119
+de como cuidam dos dados do usuário. O princípio é 
+
+150
+00:14:06,119 --> 00:14:10,019
+que nos aplicativos sempre
+Existem diretrizes de proteção de dados,
+
+151
+00:14:10,019 --> 00:14:15,940
+mas são muito, muito... 
+longas e confusas.E se eu falasse
+
+152
+00:14:15,940 --> 00:14:19,149
+disso agora, ainda precisaria disso
+mais uma hora. Assim isso pode virar uma
+
+153
+00:14:19,149 --> 00:14:22,119
+conversa completamente diferente 
+e não quero falar mais disso.
+
+154
+00:14:22,119 --> 00:14:30,560
+O Ministério Alemão de CyberSegurança 
+publicou um relatório de situação 
+
+155
+00:14:30,560 --> 00:14:34,991
+em 2018 e depois dividiu-o em 
+diferentes situações de risco.
+
+156
+00:14:34,991 --> 00:14:42,879
+Primeiro: a situação de ameaça, 
+onde o usuário dos 
+
+
+157
+00:14:42,879 --> 00:14:48,290
+dispositivos IoT é o alvo e sofre o dano. 
+E há pontos como manipulação de dados,
+
+158
+00:14:48,290 --> 00:14:53,949
+espionagem de dados, 
+sabotagem e backdoor em IoT.
+
+159
+00:14:53,949 --> 00:15:00,940
+E a segunda situação de 
+perigo que ele mencionou foi a situação
+
+160
+00:15:00,940 --> 00:15:06,160
+em que um grupo de pessoas poderiam 
+ser prejudicadas como resultado,
+
+161
+00:15:06,160 --> 00:15:10,019
+ex a criação de botsnets, roubo de 
+identidade,Ofuscação, mineração de criptomoeda,
+
+162
+00:15:10,019 --> 00:15:15,399
+fraude de cliques em banners e 
+assim vai.. E devo dizer destas 
+
+163
+00:15:15,399 --> 00:15:20,999
+situações de perigo,  
+todas podem ser feitas com uma lâmpada.
+
+164
+00:15:20,999 --> 00:15:24,910
+A mineração de criptografia é 
+um pouco ruim porque o desempenho 
+
+165
+00:15:24,910 --> 00:15:33,880
+não é suficiente, mas teoricamente seria
+possível. Agora pensei sobre 
+
+166
+00:15:33,880 --> 00:15:38,740
+qual poderia ser um possível 
+cenário de ataque ao usar uma lâmpada.
+
+
+167
+00:15:38,740 --> 00:15:44,129
+E em geralmente acontece que a lâmpada, 
+como participante da rede, tem 
+
+
+168
+00:15:44,129 --> 00:15:48,859
+acesso a toda a rede local
+e pode até mesmo acessar fotos 
+
+169
+00:15:48,859 --> 00:15:52,449
+de férias ou quaisquer 
+outros dados por meio 
+
+170
+00:15:52,449 --> 00:16:01,600
+de envenenamento da tabela ARP e 
+e enviá-los para um servidor externo.
+
+171
+00:16:01,600 --> 00:16:07,600
+E foi isso que eu fiz então. Então, 
+basicamente, a primeira ideia era:
+
+172
+00:16:07,600 --> 00:16:11,160
+obter os dados da rede WiFi somente 
+com o dispositivo, depois envia-los. 
+
+173
+00:16:11,160 --> 00:16:19,839
+Fiz e funcionou sem problemas. Então,
+resumidamente: qualquer pessoa 
+
+174
+00:16:19,839 --> 00:16:22,420
+pode se tornar fabricante e revendedor.
+Então, isso demora cinco minutos 
+
+175
+00:16:22,420 --> 00:16:26,199
+ou você pode comprar qualquer dispositivo, 
+conectá-lo ao seu próprio produto e
+
+176
+00:16:26,199 --> 00:16:32,400
+colocá-lo em sua própria 
+nuvem para poder acessar 
+
+177
+00:16:32,400 --> 00:16:37,600
+totalmente os dados. E então, 
+o próprio provedor de nuvem 
+
+178
+00:16:37,600 --> 00:16:41,040
+pode acessar os dados, o 
+fabricante e também os fornecedores, 
+
+179
+00:16:41,040 --> 00:16:46,290
+se quiserem. Todos eles também 
+têm acesso ao firmware. Você também pode 
+
+180
+00:16:46,290 --> 00:16:52,360
+alterar o firmware durante a operação
+O ruim, claro, é que você poderá 
+
+181
+00:16:52,360 --> 00:16:57,309
+acessar todos os dados do usuário. E a 
+coleta de dados é realmente em 
+
+182
+00:16:57,309 --> 00:17:02,579
+altíssima escala: com coordenadas GPS
+e assim vai; Na verdade, não precisa
+
+183
+00:17:02,579 --> 00:17:06,699
+ser o caso de uma lâmpada. Disseram-me 
+que a obtenção de dados não 
+
+184
+00:17:06,699 --> 00:17:13,780
+pode ser interrompida porque não é possível. 
+E isso também é um grande ponto.
+
+
+185
+00:17:13,780 --> 00:17:17,799
+Isto significa: Como um fabricante 
+alemão, não se pode usar 
+
+186
+00:17:17,799 --> 00:17:22,069
+esses fornecedores. Colocar  
+esses dispositivos no mercado 
+
+
+187
+00:17:22,069 --> 00:17:26,800
+também é muito fácil: É fácil 
+vendê-los: você pode comprar 
+
+188
+00:17:26,800 --> 00:17:31,500
+muitos e pegar o lucro. Man kann
+... im Gebrauchtmarkt muss man sehr
+
+189
+00:17:31,500 --> 00:17:35,121
+aufpassen ,weil man nie weiß was drin ist.
+Und der junge Herr zum Beispiel hat von
+
+190
+00:17:35,121 --> 00:17:40,309
+mir eine geschenkt bekommen. Das ist
+natürlich noch eine andere Möglichkeit
+
+191
+00:17:40,309 --> 00:17:48,950
+auch, solche Geräte in den Verkehr zu
+bringen. Jetzt war eigentlich für mich die
+
+192
+00:17:48,950 --> 00:17:53,919
+Arbeit beendet, weil meinem Kunden konnte
+ich natürlich nicht mehr helfen oder nicht
+
+193
+00:17:53,919 --> 00:18:00,230
+sagen, okay wir nehmen einen tollen
+Military-Grade Anbieter aus Fernost,
+
+194
+00:18:00,230 --> 00:18:04,480
+sondern wir müssen was Eigenes machen.
+Trotzdem hatte ich eine eigene, neue
+
+195
+00:18:04,480 --> 00:18:08,370
+Motivation. Und zwar erstens mal, ist es
+denn möglich, diese ganzen Geräte, wie sie
+
+196
+00:18:08,370 --> 00:18:14,610
+alle hier sind, auch ohne die Cloud zu
+betreiben. Und zweitens wollte ich
+
+197
+00:18:14,610 --> 00:18:21,269
+natürlich auch noch mal den wirklichen
+Proof of Concept von dem Trojaner haben.
+
+198
+00:18:21,269 --> 00:18:27,360
+Und das heißt es ging jetzt für mich
+nochmal eine Runde weiter. So, dafür habe
+
+199
+00:18:27,360 --> 00:18:32,460
+ich mir ein kleines Testsetup aufgebaut.
+Ich habe einfach einen Raspberry Pi mit
+
+200
+00:18:32,460 --> 00:18:36,870
+einem Kali Linux benutzt und da einen
+Software-Access Point laufen lassen, einen
+
+201
+00:18:36,870 --> 00:18:43,470
+hostapd. Dann brauchte ich meine eigenen
+DNS-Server, um auch Anfragen umleiten zu
+
+202
+00:18:43,470 --> 00:18:49,660
+können. Hab den eigenen HTTP-Server
+gebraucht, Und den MQTT-Broker und zum
+
+203
+00:18:49,660 --> 00:18:54,180
+Analysieren habe ich Wireshark benutzt und
+man-in-the-middle-Attacken mit bettercap
+
+204
+00:18:54,180 --> 00:19:00,100
+gemacht. Ja, dann ging es erst einmal zur
+Netzwerkanalyse, Ich habe mir erst einmal
+
+205
+00:19:00,100 --> 00:19:05,320
+angeguckt, was geht denn da rein und raus
+auf der Netzwerk Seite. Es ist ganz
+
+206
+00:19:05,320 --> 00:19:09,700
+einfach. Es gibt eigentlich drei Sachen:
+Es gibt DNS-Requests. Es gibt HTTP
+
+207
+00:19:09,700 --> 00:19:15,150
+Anfragen. Die sind eigentlich meistens
+unverschlüsselt bzw. auch die wichtigen
+
+208
+00:19:15,150 --> 00:19:21,330
+Sachen, die zum Beispiel Schlüssel
+enthalten, sind dann unverschlüsselt. Und
+
+209
+00:19:21,330 --> 00:19:27,769
+MQTT ist auch vorhanden und verschlüsselt.
+Aber es wird auch, wenn in der Lampe
+
+210
+00:19:27,769 --> 00:19:39,941
+selbst https und die MQTTs implementiert
+sind, einfach nicht benutzt. Und das ist
+
+211
+00:19:39,941 --> 00:19:43,390
+wieder "sehr sicher". Wie gesagt, in dem
+Feld. man sieht es hier nicht, aber da ist
+
+212
+00:19:43,390 --> 00:19:51,110
+auch der local Key in clear drin, in der
+Anfrage. Und dann habe ich eine kleine
+
+213
+00:19:51,110 --> 00:19:55,580
+Crypto Analyse gemacht, um auch zu sehen
+was sonst noch so alles in den
+
+214
+00:19:55,580 --> 00:20:01,370
+verschlüsselten Nachrichten drin steckt
+und dadurch dass der ESP verwendet wird
+
+215
+00:20:01,370 --> 00:20:07,520
+und diesen Tensilica XTENSA Core hat, ist
+das Disassemblieren sehr mühselig von dem
+
+216
+00:20:07,520 --> 00:20:11,929
+Binary, weil es eben keine guten Plugins
+gibt und auch keine guten Disassembler.
+
+217
+00:20:11,929 --> 00:20:17,740
+Und dann hab ich mich mal ein bisschen
+umgeschaut. Und es gibt von dem Cloud-
+
+218
+00:20:17,740 --> 00:20:23,440
+Anbieter eine sehr gute API Dokumentation,
+die zwar auch sehr viele Fehler hat, aber
+
+219
+00:20:23,440 --> 00:20:27,380
+da drin sind auch sehr wichtige Teile wie
+Verschlüsselungen teilweise dokumentiert.
+
+220
+00:20:27,380 --> 00:20:33,740
+Und es gibt noch ein SDK das habe ich
+angefragt aber bevor ich es geschickt
+
+221
+00:20:33,740 --> 00:20:36,759
+bekommen habe, habe ich es auch im Internet
+gefunden, ist eigentlich auch öffentlich
+
+222
+00:20:36,759 --> 00:20:43,690
+zugänglich und mit dem SDK waren pre-
+compiled Libraries drin, die ich dann auch
+
+223
+00:20:43,690 --> 00:20:47,740
+analysieren konnte und wenn ich meine
+eigene Firmware damit kompiliert habe,
+
+224
+00:20:47,740 --> 00:20:52,639
+hatte ich ein Sample Output und brauchte
+kein wirkliches Disassembling. Das
+
+225
+00:20:52,639 --> 00:21:00,110
+Ergebnis der Crypto-Analyse war, dass ich
+dann in einem kleinen 60 Zeilen Skript ja
+
+226
+00:21:00,110 --> 00:21:05,740
+alle verwendeten Verschlüsselungen drin
+hatte und es wird eigentlich nur ein
+
+227
+00:21:05,740 --> 00:21:13,029
+AES-128 verwendet mit dem Local Key und
+die MD5 Check-Summe teilweise über gewisse
+
+228
+00:21:13,029 --> 00:21:18,750
+Teile davon gebildet, auch als Sicherheit
+und signiert werden die Daten auch mit
+
+229
+00:21:18,750 --> 00:21:29,200
+einem MD5. So, dann hab ich erst mal
+geguckt wie funktioniert denn so eine
+
+230
+00:21:29,200 --> 00:21:33,139
+Registrierung. Also die Registrierung
+selbst einer Lampe an der Cloud
+
+231
+00:21:33,139 --> 00:21:40,750
+funktioniert so, dass die Mobile-App einen
+Token anfragt an der Cloud, schickt den
+
+232
+00:21:40,750 --> 00:21:48,490
+über Morse Protokoll namens SmartConfig
+mit den Wifi-Credentials zur Lampe, die
+
+233
+00:21:48,490 --> 00:21:56,240
+meldet sich im WLAN an und schickt dann
+den Token zurück an die Cloud und bekommt
+
+234
+00:21:56,240 --> 00:22:06,130
+die MQTT-Login Daten und fragt nach der
+Activation. Das ist eine HTTP-Anfrage
+
+235
+00:22:06,130 --> 00:22:11,470
+auch, bei der dann der Local Key und der
+Security Key in clear zurückkommen. Der
+
+236
+00:22:11,470 --> 00:22:16,090
+Local Key geht auch zur App und danach
+kann sich die Lampe anmelden an der Cloud
+
+237
+00:22:16,090 --> 00:22:25,529
+und kommuniziert weiterhin mit der Cloud
+und kann verwendet werden. Was mich viel
+
+238
+00:22:25,529 --> 00:22:29,580
+mehr interessiert hat war das Upgrade weil
+ich ja eigentlich meine eigene Firma
+
+239
+00:22:29,580 --> 00:22:35,399
+reinbringen wollte und dazu hatte
+ich eine Lampe, die hat eine neue
+
+240
+00:22:35,399 --> 00:22:42,120
+Firmware, ein Firmware-Upgrade gehabt und
+das funktioniert im Endeffekt so, auf dem
+
+241
+00:22:42,120 --> 00:22:47,429
+Handy wird gefragt, ob das Upgrade
+durchgeführt werden soll. Dann wird ein
+
+242
+00:22:47,429 --> 00:22:51,710
+Trigger ausgelöst und der Trigger wird an
+die Lampe gesendet und die Lampe fragt
+
+243
+00:22:51,710 --> 00:23:01,260
+über HTTP, wo gibt's die neue Firmware und
+welche Version hat die, und so weiter.
+
+244
+00:23:01,260 --> 00:23:06,620
+Dann lädt sich die Lampe einfach von einem
+HTTP-Server das Binary und installiert es
+
+245
+00:23:06,620 --> 00:23:13,130
+in die nicht genutzte User Partition. Für
+mich war es ganz einfach, ich habe mir als
+
+246
+00:23:13,130 --> 00:23:20,769
+allererstes mal einen eigenen MQTT-Server
+genommen und hab dann versucht das Trigger
+
+247
+00:23:20,769 --> 00:23:27,669
+selbst zu generieren. Und danach habe ich
+mit einer Man-in-the-Middle Attack den HTTP
+
+248
+00:23:27,669 --> 00:23:31,500
+Request verändert und hab der Glühbirne
+eben gesagt, dass sie von meinem eigenen
+
+249
+00:23:31,500 --> 00:23:38,389
+Server die Firmware laden soll.
+Funktionieren tut das ganz einfach so, der
+
+250
+00:23:38,389 --> 00:23:43,610
+eigene MQTT-Server wird benutzt. Dafür
+musste ich einfach den DNS-Server
+
+251
+00:23:43,610 --> 00:23:50,840
+umbiegen, dass eben nicht mehr auf den
+MQTT-Server des Cloud Anbieters geschaut
+
+252
+00:23:50,840 --> 00:23:56,679
+wird sondern auf meinen Lokalen. Man sieht
+dass sich die Lampe anmeldet und
+
+253
+00:23:56,679 --> 00:24:05,299
+irgendwelche Nachrichten ausgetauscht
+werden. Das Nächste war eigentlich so das
+
+254
+00:24:05,299 --> 00:24:12,210
+kniffligste. Das war der Upgrade-Trigger,
+den hab ich erst mal analysiert, der kommt
+
+255
+00:24:12,210 --> 00:24:16,690
+tatsächlich verschlüsselt und wurde dann
+entschlüsselt mit einem Local Key und dann
+
+256
+00:24:16,690 --> 00:24:23,289
+hat man darin gesehen dass das Protokoll
+15 quasi das Upgrade triggert und man kann
+
+257
+00:24:23,289 --> 00:24:29,690
+sich dann einfach mit meinen Skripts die
+Trigger generieren. Beim Timestamp der
+
+258
+00:24:29,690 --> 00:24:33,570
+verwendet wird ist es auch so, dass es die
+Lampe sehr sehr gnädig ist. Der kann auch
+
+259
+00:24:33,570 --> 00:24:36,659
+gerne mal ein bisschen älter sein oder man
+kann das auch öfter verwenden. Das
+
+260
+00:24:36,659 --> 00:24:45,700
+funktioniert dann auch immer wieder und so
+konnte man einfach über den Moskito Befehl
+
+261
+00:24:45,700 --> 00:24:50,320
+das Upgrade triggern. Ja, ich habe dann
+noch ein bisschen automatisiert, dass
+
+262
+00:24:50,320 --> 00:24:56,340
+alles mit einem Klick passiert quasi, das
+hab ich auch eigentlich gemacht für euch
+
+263
+00:24:56,340 --> 00:24:59,340
+alle, weil ich es dann später alles
+veröffentlichen werde.
+
+264
+00:24:59,340 --> 00:25:07,259
+*Aplausos*
+
+265
+00:25:07,259 --> 00:25:12,360
+Punkt war das Ändern der Upgrade-Quelle;
+hierzu habe ich ein fertiges Tool benutzt
+
+266
+00:25:12,360 --> 00:25:19,419
+das heißt bettercap; damit kann man HTTP-
+Requests einfach in Realtime ändern. Und
+
+267
+00:25:19,419 --> 00:25:26,009
+da ich ja eh Kali Linux als Access Point
+benutzt habe, konnte ich auch relativ gut
+
+268
+00:25:26,009 --> 00:25:33,110
+dran und habe quasi dann in die URL und in
+den MD5 einfach die Daten meiner neuen
+
+269
+00:25:33,110 --> 00:25:42,600
+Firmware geschrieben. Und das geht auch
+mit ein paar kleinen Skripts. Das heißt,
+
+270
+00:25:42,600 --> 00:25:49,669
+man gibt an, dass er irgendwelche fertigen
+Strings in den HTTP-Replies sucht und dann
+
+271
+00:25:49,669 --> 00:25:54,600
+einfach ersetzt und danach ging es
+eigentlich nur noch darum einen eigenen
+
+272
+00:25:54,600 --> 00:26:02,500
+HTTP-Server zu installieren und die Lampe
+hat nach dem Upgrade Trigger das Binary
+
+273
+00:26:02,500 --> 00:26:10,110
+von meinem Server gezogen. Ja, jetzt
+geht's noch zum Thema eigene Firmware. Ich
+
+274
+00:26:10,110 --> 00:26:17,480
+habe euch ja schon gesagt - ach genau -
+die hab ich ja schon erwähnt, dass ich da
+
+275
+00:26:17,480 --> 00:26:21,299
+verschiedene Versionen machen wollte unter
+anderem die eine die eigentlich nur das
+
+276
+00:26:21,299 --> 00:26:26,659
+WLAN Passwort mal raus pusht. Und dann hab
+ich die einfach mal eingespielt. Generell
+
+277
+00:26:26,659 --> 00:26:29,710
+ist es so, ich hab jetzt hier verschiedene
+Terminal Windows auf, das kann man
+
+278
+00:26:29,710 --> 00:26:34,779
+natürlich noch alles vereinfachen, ganz
+oben in der ersten Zeile sehen wir den
+
+279
+00:26:34,779 --> 00:26:40,980
+Access Point, dann den Moskito Server auf
+der anderen Seite, hab ich ein HTTP-Server
+
+280
+00:26:40,980 --> 00:26:46,011
+gestartet auf dem mein Binary liegt und
+ein Script, das mir alle Kommandos in
+
+281
+00:26:46,011 --> 00:26:54,220
+Realtime entschlüsselt. Dann gibt's noch
+das bettercap, das eben die Anfragen
+
+282
+00:26:54,220 --> 00:27:00,080
+verändert und unten rechts sehen wir ein
+Terminal, in dem wir eigentlich nur die
+
+283
+00:27:00,080 --> 00:27:07,909
+die seriellen Ausgaben der Lampe sieht und
+die hab ich jetzt gestartet und danach
+
+284
+00:27:07,909 --> 00:27:14,680
+sende ich mit dem letzten Befehl unten
+noch einfach mal den Trigger Request. Und
+
+285
+00:27:14,680 --> 00:27:23,809
+dann sollte man sehen wie die, ja genau
+jetzt kommt der Request und jetzt kommen
+
+286
+00:27:23,809 --> 00:27:29,080
+überall Anfragen und die Lampe bootet neu
+und es ist eine neue Firmware drauf, also
+
+287
+00:27:29,080 --> 00:27:39,409
+geht ganz schnell. Genau so jetzt ging es
+um die Firmware, die draufgeht. Ich habe
+
+288
+00:27:39,409 --> 00:27:44,570
+euch gesagt, ich wollte ein Proof-of-
+Concept machen von einem Trojaner. Was
+
+289
+00:27:44,570 --> 00:27:48,279
+macht der Trojaner? Ganz einfach, der
+verbindet sich zu meinem eigenen Server
+
+290
+00:27:48,279 --> 00:27:54,190
+der irgendwo extern im Internet steht,
+schickt die WLAN Credentials und öffnet
+
+291
+00:27:54,190 --> 00:28:00,299
+noch einen Reverse Tunnel über den ich
+dann zurück in das lokale Netzwerk gehe.
+
+292
+00:28:00,299 --> 00:28:04,340
+Der agiert bei mir in meiner
+Implementation einfach als HTTP oder Socks
+
+293
+00:28:04,340 --> 00:28:10,799
+Proxy, d.h. man kann einfach irgendeinen
+Browser nehmen, gibt die von meinem
+
+294
+00:28:10,799 --> 00:28:19,710
+externen Server die IP-Adresse ein und den
+Port und ist dann im lokalen Netzwerk des
+
+295
+00:28:19,710 --> 00:28:25,260
+Lampenbetreibers. Das Ganze war mir noch
+sehr wichtig, dass es transparent ist,
+
+296
+00:28:25,260 --> 00:28:30,659
+d.h. der Nutzer der Lampe bekommt das
+überhaupt nicht mit und die ganz normale
+
+297
+00:28:30,659 --> 00:28:36,510
+Lampenfunktion ist noch genauso gegeben
+wie vorher. Hier habe ich auch eine kleine
+
+298
+00:28:36,510 --> 00:28:42,799
+Demo davon. Oben habe ich wieder das
+Terminal der Lampe selbst; dann hab ich
+
+299
+00:28:42,799 --> 00:28:48,370
+mal auf meinem Server selbst einen Proxy
+Forwarder, ist auch ein kleines Python
+
+300
+00:28:48,370 --> 00:28:55,211
+Script, und unten hab ich irgendwo im
+Internet dann einen Rechner, das sehen wir
+
+301
+00:28:55,211 --> 00:29:00,279
+jetzt gleich. Dann hab ich einfach mal
+eine IP-Abfrage gemacht. Genau. Jetzt
+
+302
+00:29:00,279 --> 00:29:07,919
+verbindet sich die Lampe zu meinem Server
+und ich mache unten eine Abfrage der IP,
+
+303
+00:29:07,919 --> 00:29:13,620
+dass ist also die externe IP, ist in dem
+Fall 213 irgendwas; jetzt mache ich das
+
+304
+00:29:13,620 --> 00:29:22,639
+Gleiche mit dem Proxy, genau da habe ich
+jetzt einfach meinen eigenen Proxy noch
+
+305
+00:29:22,639 --> 00:29:26,830
+mit reingesetzt und sehe auf einmal dass
+bei der Lampe selbst die Anfrage kommt und
+
+306
+00:29:26,830 --> 00:29:33,419
+auf einmal die lokale IP der Lampe
+gesendet wird, und dann wollte ich noch
+
+307
+00:29:33,419 --> 00:29:40,249
+zum Test mal im internen Netzwerk was
+zugreifen und habe jetzt einfach mal auf
+
+308
+00:29:40,249 --> 00:29:47,639
+fritz.box eine Abfrage gestellt und konnte
+somit sehen dass in dem Netzwerk auch eine
+
+309
+00:29:47,639 --> 00:29:56,259
+Fritzbox drin ist. Also das heißt, man
+kann mit dem Proxy nicht nur den Internet
+
+310
+00:29:56,259 --> 00:30:01,610
+Account des Opfers benutzen für Bot-Netze
+und so weiter, oder für alles andere,
+
+311
+00:30:01,610 --> 00:30:04,539
+sondern man kann sich ja auch im lokalen
+Netzwerk ganz einfach bewegen.
+
+312
+00:30:04,539 --> 00:30:14,009
+*Aplausos*
+
+313
+00:30:14,009 --> 00:30:21,440
+Die große Frage ist: Warum ist es so
+gefährlich? Es ist eigentlich so, man weiß
+
+314
+00:30:21,440 --> 00:30:26,379
+nie was in so einem Gerät drin steckt und
+gerade auch dieser Button "Silent Upgrade"
+
+315
+00:30:26,379 --> 00:30:31,289
+hat mich sehr verwundern lassen und in
+meinem Fall war es noch nicht einmal so,
+
+316
+00:30:31,289 --> 00:30:35,640
+dass dass zum Upgraden der Firmware der
+Lampe irgendeine Bestätigung vom User
+
+317
+00:30:35,640 --> 00:30:40,970
+kommen musste oder so weiter. Das heißt
+man, man bekommt es nicht mit und man kann
+
+318
+00:30:40,970 --> 00:30:46,380
+einfach Trojaner in irgendwelche Lampen
+rein flashen und das halt auch im ganz
+
+319
+00:30:46,380 --> 00:30:51,070
+großen Bereich. Das heißt, wenn ich jetzt
+20 000 Lampen verkauft hab, dann kann ich
+
+320
+00:30:51,070 --> 00:30:56,149
+einfach mich durch meine Web-Applikationen
+klicken, lade das neue Binary mit dem
+
+321
+00:30:56,149 --> 00:31:00,019
+Trojaner hoch und gestern war es noch eine
+sichere Lampe und morgen ist es einfach
+
+322
+00:31:00,019 --> 00:31:04,990
+der Trojaner und der Nutzer selbst bekommt
+es einfach überhaupt nicht mit. Und, ja,
+
+323
+00:31:04,990 --> 00:31:12,210
+wie gesagt, ich habe das Flashen selbst
+gemacht durch, durch Löten am Anfang, es
+
+324
+00:31:12,210 --> 00:31:15,380
+geht aber auch mit der ganz normalen Man-
+in-the-Middle-Attack, oder der Cloud
+
+325
+00:31:15,380 --> 00:31:22,629
+Provider kann das einfach mit seinen ganz
+normalen Tools jederzeit durchführen. Was
+
+326
+00:31:22,629 --> 00:31:27,759
+auch noch ein Thema war für mich, war
+eben: Kann ich das Ding auch ohne Cloud
+
+327
+00:31:27,759 --> 00:31:34,879
+betreiben? Wenn ich jetzt so eine
+Lampe zuhause hab, dann hab ich gedacht,
+
+328
+00:31:34,879 --> 00:31:41,370
+Ok, es gibt verschiedene Open Source
+Software die auch sehr viele tolle
+
+329
+00:31:41,370 --> 00:31:47,450
+Funktionen haben sogar danach noch mehr
+können und so weiter und der normale
+
+330
+00:31:47,450 --> 00:31:52,289
+Workflow, das zu flashen ist einfach dass
+man wirklich die Lampe aufbricht und dann
+
+331
+00:31:52,289 --> 00:31:57,299
+die Kontakte anlötet und so weiter und da
+hört bei den meisten Leuten auf. Jetzt
+
+332
+00:31:57,299 --> 00:32:02,830
+können wir aber auch mit der Methode wie
+ich sie gezeigt habe natürlich auch eine
+
+333
+00:32:02,830 --> 00:32:07,039
+andere Firmware in die Lampe flashen um
+sie eben ohne die Cloud betreiben zu
+
+334
+00:32:07,039 --> 00:32:10,590
+können. Und wie gesagt,ich werde es dann
+auch veröffentlichen da kann dann jeder
+
+335
+00:32:10,590 --> 00:32:19,809
+damit machen was er möchte. Ja, zum Fazit.
+Das Sicherheitslevel von diesen Geräten
+
+336
+00:32:19,809 --> 00:32:26,820
+ist tatsächlich minimal. Also es ist
+wirklich so, dass alles was ich
+
+337
+00:32:26,820 --> 00:32:33,460
+probiert habe hat direkt funktioniert. Es
+gab keinerlei Verschlüsselung von Daten
+
+338
+00:32:33,460 --> 00:32:41,250
+die in dem Gerät selbst abgelegt werden.
+Die Firmware war weder signiert noch die
+
+339
+00:32:41,250 --> 00:32:46,380
+Updates waren signiert. Also ich kann
+direkt Änderungen direkt daran machen. Die
+
+340
+00:32:46,380 --> 00:32:52,059
+Datenspeicherung ist unverschlüsselt und
+die Datenübertragung war auch eigentlich
+
+341
+00:32:52,059 --> 00:32:57,549
+in den kritischsten Fällen
+unverschlüsselt. Und da war, wo sie
+
+342
+00:32:57,549 --> 00:33:06,039
+verschlüsselt war es ja keine
+Hürde. Das viel Erschreckendere jedoch ist
+
+343
+00:33:06,039 --> 00:33:13,830
+das große Datensammeln. Für mich ist es
+völlig unklar warum der Hersteller und der
+
+344
+00:33:13,830 --> 00:33:20,019
+Reseller oder wer auch immer Zugriff auf
+den Account hat, wissen muss wo genau
+
+345
+00:33:20,019 --> 00:33:23,049
+diese Lampe sich befindet und das war
+wirklich so, dass die GPS-Koordinaten die
+
+346
+00:33:23,049 --> 00:33:28,110
+waren über das Handy ermittelt, bei der
+Registrierung. Aber die waren sehr genau
+
+347
+00:33:28,110 --> 00:33:34,080
+und ich habe quasi den Schreibtisch an dem
+ich gesessen habe quasi in den Koordinaten
+
+348
+00:33:34,080 --> 00:33:40,020
+wiedergefunden und da sehe ich keinen
+Grund dafür. Und es ist natürlich auch
+
+349
+00:33:40,020 --> 00:33:46,320
+erschreckend wer alles darauf Zugriff hat.
+Die Datenweitergabe und -Speicherung ist
+
+350
+00:33:46,320 --> 00:33:53,679
+auch äußerst undurchsichtig. Also es wird
+zwar teilweise gesagt, dass die Daten mit
+
+351
+00:33:53,679 --> 00:33:58,749
+auch in Deutschland gehostet werden aber
+auch jederzeit nach Fernost übertragen
+
+352
+00:33:58,749 --> 00:34:04,730
+werden können. Und wer wirklich darauf
+Zugriff hat, das weiß natürlich keiner und
+
+353
+00:34:04,730 --> 00:34:15,540
+ist auch nicht bekannt. Und. Ja. Das große
+Problem für mich ist, dass es die
+
+354
+00:34:15,540 --> 00:34:19,360
+einfachsten Verbrauchsgegenstände, weil
+eine Glühbirne ist ja wirklich eigentlich
+
+355
+00:34:19,360 --> 00:34:26,580
+nur dazu da ein bisschen Licht zu machen,
+und für mich vergleichbar zu Klopapier ein
+
+356
+00:34:26,580 --> 00:34:31,000
+einfacher Verbrauchsgegenstand. Und jetzt
+wird nach und nach alles Smart und wenn
+
+357
+00:34:31,000 --> 00:34:36,880
+selbst so kleine Geräte, die so normal für
+uns alle sind, weil jeder hat eine
+
+358
+00:34:36,880 --> 00:34:40,640
+Glühbirne zuhause, auf einmal smart sein
+müssen dann bringt man natürlich auch
+
+359
+00:34:40,640 --> 00:34:44,990
+viele Gefahren mit in seinen eigenen
+Haushalt. Und den meisten Leuten ist es
+
+360
+00:34:44,990 --> 00:34:48,990
+einfach nicht bewusst weil sie denken: Ok.
+Wenn jemand die Glühbirne hackt, was will
+
+361
+00:34:48,990 --> 00:34:54,590
+er machen? Das Licht an-ausschalten? Aber
+die tatsächliche Konsequenz ist natürlich
+
+362
+00:34:54,590 --> 00:35:03,560
+ganz anders, dass auf einmal das komplette
+lokale Netzwerk von außen offen ist und
+
+363
+00:35:03,560 --> 00:35:09,620
+auch auf private Daten und so weiter zu
+zugegriffen werden kann. Das einzig
+
+364
+00:35:09,620 --> 00:35:14,310
+Positive jedoch aus dem, aus meinen
+Erkenntnissen ist eben, dass man die
+
+365
+00:35:14,310 --> 00:35:19,600
+Hersteller-Cloud doch recht gut abschalten
+kann. Das zeigt aber auch wieder, dass es
+
+366
+00:35:19,600 --> 00:35:23,720
+eigentlich überhaupt nicht notwendig ist,
+weil man kann die Lampe mit den anderen
+
+367
+00:35:23,720 --> 00:35:27,910
+Firrmwaren noch viel besser benutzen und
+so weiter, ohne dass eben diese Daten
+
+368
+00:35:27,910 --> 00:35:33,350
+gespeichert werden. Und eigentlich ist es
+von meiner Seite ein Appell an die IoT-
+
+369
+00:35:33,350 --> 00:35:39,400
+Hersteller eben, dass diese gute Technik
+und schöne Technik und bequeme Technik den
+
+370
+00:35:39,400 --> 00:35:45,410
+Usern bereitzustellen ohne diese ganzen
+Daten zu sammeln. Und wenn der Anbieter zu
+
+371
+00:35:45,410 --> 00:35:52,200
+mir sagt: "it is avoidless", auf die Frage
+ob die Daten denn nicht gespeichert werden
+
+372
+00:35:52,200 --> 00:36:01,160
+können, ist es tatsächlich eine Lüge und
+auch nicht, ja, notwendig. Ja. Ich habe
+
+373
+00:36:01,160 --> 00:36:08,630
+schon angekündigt, ich werde noch weitere
+Infos auf der, auf unserer Website zum
+
+374
+00:36:08,630 --> 00:36:14,750
+Download bereit geben. Unter anderem halt
+auch Skripte mit denen man dann andere
+
+375
+00:36:14,750 --> 00:36:17,743
+Firmware auf solche Geräte flashen kann
+
+376
+00:36:17,743 --> 00:36:21,040
+und bin leider noch nicht dazu 
+gekommen das alles fertig
+
+377
+00:36:21,040 --> 00:36:29,070
+zu machen aber das wird in Kürze folgen.
+Ja, Agora chegamos à parte das perguntas 
+
+378
+00:36:29,070 --> 00:36:36,690
+e acho que alguém subirá ao 
+palco para fazer perguntas...
+
+379
+00:36:36,690 --> 00:36:48,133
+*Aplausos*
+
+380
+00:36:48,133 --> 00:36:54,620
+Herald: Sim, muito obrigado Micha. 
+Continuo preocupado e 
+
+
+381
+00:36:54,620 --> 00:37:00,100
+não vejo nada de segurança militar.
+Pergunta ao rapaz
+
+
+382
+00:37:00,100 --> 00:37:06,040
+que recebeu a lâmpada.
+Você ainda quer mantê-los? 
+
+383
+00:37:06,040 --> 00:37:13,140
+Tem certeza? OK bom. Temos alguma dúvida?
+Vamos. Vamos começar por aí.
+
+384
+00:37:13,140 --> 00:37:18,280
+Mikro 2 bitte.
+Mikro 2: Ist MQTT jetzt verschlüsselt,
+
+385
+00:37:18,280 --> 00:37:20,490
+oder nicht ? Ich habe es nicht ganz
+verstanden.
+
+386
+00:37:20,490 --> 00:37:25,540
+Michael: MQTT ist verschlüsselt. Ist mit
+AES verschlüsselt und mit dem Local-Key,
+
+387
+00:37:25,540 --> 00:37:29,570
+den man über den HTTP Befehl in Klartext
+angezeigt bekommt.
+
+388
+00:37:29,570 --> 00:37:35,430
+*Gelächter*
+Herald: Dankeschön. Wir machen gleich bei
+
+389
+00:37:35,430 --> 00:37:41,080
+Dir weiter. Ihr mommt dann als nächster.
+Deine Frage bitte.
+
+390
+00:37:41,080 --> 00:37:44,880
+Mikrofon: Wie lösen die alternativen
+Firmwares [unverständlich] Problem von dem
+
+391
+00:37:44,880 --> 00:37:49,570
+Klartextpassword fürs WLAN?
+Michael: Um ehrlich zu sein habe ich da
+
+392
+00:37:49,570 --> 00:37:52,470
+nicht weiter geschaut. Ich habe nur..
+Dadurch dass es Open-Source ist kann
+
+393
+00:37:52,470 --> 00:37:59,200
+natürlich jeder da reinprogrammieren was
+er möchte und hat da volle Kontrolle. Und
+
+394
+00:37:59,200 --> 00:38:02,610
+ob das jetzt in Klar abgespeichert wird
+oder nicht kann ich jetzt nicht direkt sagen.
+
+395
+00:38:02,610 --> 00:38:10,974
+Herald: Okay, vielen Dank. 
+So, nächste Frage, Mikro 1 bitte.
+
+396
+00:38:10,974 --> 00:38:14,020
+Mikro 1: Wenn die Lampen so populär sind
+
+397
+00:38:14,020 --> 00:38:19,850
+könnte man nicht eine Stiftung haben die
+zehn Millionen Lampen verkauft auf denen
+
+398
+00:38:19,850 --> 00:38:24,740
+wir dann zehn Millionen Tor-Exit-Nodes
+laufen lassen?
+
+399
+00:38:24,740 --> 00:38:33,140
+*Gelächter* & *Aplausos*
+
+400
+00:38:33,140 --> 00:38:35,060
+Michael: Das ist natürlich eine sehr
+
+401
+00:38:35,060 --> 00:38:40,420
+interessante Idee und man kann da noch
+viel mehr damit machen. Theoretisch könnte
+
+402
+00:38:40,420 --> 00:38:44,970
+man auch sagen, man macht nur einen
+Katalog aus verschiedenen Firmwaren die
+
+403
+00:38:44,970 --> 00:38:47,830
+für verschiedene Modelle eben
+funktionieren und macht da eben solche
+
+404
+00:38:47,830 --> 00:38:53,730
+Sachen mit rein. Und dann könnte man das
+sehr gut betreiben wobei aber die ja die
+
+405
+00:38:53,730 --> 00:38:58,880
+Power oder die CPU Power doch sehr
+limitiert ist.
+
+406
+00:38:58,880 --> 00:39:08,790
+Herald: Ok, Ich denke mal wir nehmen jetzt die
+nächste Frage Mikro 1 nochmal.
+
+407
+00:39:08,790 --> 00:39:14,380
+Mikro 1: Du hattest am Anfang des Vortrags
+gesagt, das ist ein sehr bekannter und
+
+408
+00:39:14,380 --> 00:39:18,700
+namhafter Hersteller, was allein die
+Cloud-Plattform und die Dashboards
+
+409
+00:39:18,700 --> 00:39:23,220
+hergegeben haben. Kannst du uns vielleicht
+ein bisschen mehr dazu sagen welche
+
+410
+00:39:23,220 --> 00:39:27,020
+Produkte der Hersteller noch herstellt und
+verkauft außer von Glühbirnen.
+
+411
+00:39:27,020 --> 00:39:31,400
+Michael: Also es gibt wirklich alles. Es
+ist nicht ein Hersteller das ist eben
+
+412
+00:39:31,400 --> 00:39:34,910
+genau das Schlimme daran deswegen kann man
+ja auch nicht einfach so nennen das sind
+
+413
+00:39:34,910 --> 00:39:38,250
+10000 verschiedene Hersteller die eben
+genau diese Technologie einfach einsetzen
+
+414
+00:39:38,250 --> 00:39:44,090
+und die sind wirklich weltweit überall das
+heißt es gibt deutsche Hersteller, die
+
+415
+00:39:44,090 --> 00:39:47,260
+diese Technologie benutzen und man denkt
+man kauft ein deutsches Produkt.
+
+416
+00:39:47,260 --> 00:39:53,500
+Tatsächlich steckt aber das drin. Und
+Produkte gibts auch alles. Ich habe von
+
+417
+00:39:53,500 --> 00:40:00,170
+Küchengeräten, Kühlschränke und so weiter.
+Der Hersteller nennt 30 verschiedene
+
+418
+00:40:00,170 --> 00:40:05,440
+Kategorien. Es ist tatsächlich fast
+überall drin. Für mich war die Glühbirne
+
+419
+00:40:05,440 --> 00:40:10,690
+das einfachste und auch diese elektrischen
+Steckdosen weil sie einfach sehr populär
+
+420
+00:40:10,690 --> 00:40:16,730
+sind und überall eingesetzt werden.
+Herald: Ich würde jetzt gern mit Mikro
+
+421
+00:40:16,730 --> 00:40:21,510
+Nummer 3 weitermachen da stehen nämlich
+auch schon zwei Leute. Ihre Frage bitte.
+
+422
+00:40:21,510 --> 00:40:26,571
+Mikro 3: Die Frage ist ob ihr auch die
+Shelleys angeguckt hat. Haben ja diese
+
+423
+00:40:26,571 --> 00:40:32,070
+Jumperkabelansteckmöglichkeit aber die
+haben auch die Cloud ausgeschaltet. Weißt
+
+424
+00:40:32,070 --> 00:40:36,180
+Du da was zu?
+Michael: Nee, das weiß ich nicht aber ich
+
+425
+00:40:36,180 --> 00:40:41,610
+weiß auch nicht ob die von Haus aus diese
+Cloud benutzen. Hab ich nicht gemacht. Ich
+
+426
+00:40:41,610 --> 00:40:47,690
+glaube dass es einfach nur eine Open-
+Source Hardware ist auf der jetzt nichts
+
+427
+00:40:47,690 --> 00:40:53,390
+von dem Anbieter selbst läuft.
+Herald: Ok danke, dann nehmen wir das
+
+428
+00:40:53,390 --> 00:40:59,990
+nächste Mikro Nr. 2 bitte.
+Mikro 2: Ich bin kein Programmierer, meine
+
+429
+00:40:59,990 --> 00:41:04,710
+Nächte werden deswegen aber auch nicht
+besser und deswegen meine Frage einmal
+
+430
+00:41:04,710 --> 00:41:08,820
+raus in die Welt an die Bildschirme,
+welchen Tipp gibst du? Nicht im fernen
+
+431
+00:41:08,820 --> 00:41:13,360
+Osten kaufen? Nur Markenware?
+Michael: Es ist natürlich relativ
+
+432
+00:41:13,360 --> 00:41:18,520
+schwierig was zu nennen weil man weiß
+natürlich nie was drin steckt und wie ich
+
+433
+00:41:18,520 --> 00:41:24,100
+gesagt habe es gibt auch deutsche
+Hersteller die das benutzen. Ich hab mir
+
+434
+00:41:24,100 --> 00:41:28,960
+die Konkurrenzprodukte noch nicht
+angeschaut und kann deswegen auch nicht
+
+435
+00:41:28,960 --> 00:41:32,840
+sagen was man kaufen soll aber für mich
+ist natürlich auch ein Tipp eigene
+
+436
+00:41:32,840 --> 00:41:37,700
+Firmware zu verwenden und auch namhafte
+Hersteller weil die ganz andere Sachen zu
+
+437
+00:41:37,700 --> 00:41:44,700
+verlieren haben. Also wenn jetzt eine
+kleine Firma aus Fernost die machen
+
+438
+00:41:44,700 --> 00:41:48,320
+einfach unter verschiedenen Namen Firmen
+auf und danach ist es egal ob da
+
+439
+00:41:48,320 --> 00:41:53,520
+irgendwelche Hacks oder Sachen rauskommen.
+Wenn da große Namen hinten dran stehen ist
+
+440
+00:41:53,520 --> 00:42:00,150
+das natürlich eine andere Sache. Deswegen
+lieber was mit einem bekannten Namen kaufen.
+
+441
+00:42:00,150 --> 00:42:05,540
+Herald: Ok, danke. Ich sehe ein Licht. Ein
+Licht sagt mir das Internet hat ne Frage.
+
+442
+00:42:05,540 --> 00:42:08,122
+Lieber Signalengel.
+
+443
+00:42:08,122 --> 00:42:11,710
+Signalengel: Ja die Frage: Welche
+Alternative zur Klartextablage des Wlan-
+
+444
+00:42:11,710 --> 00:42:15,760
+Passworts bzw. des relevanten Schlüssels
+siehst du?
+
+445
+00:42:15,760 --> 00:42:21,060
+Michael: Naja, in Wirklichkeit rausfinden
+tut mans immer das ist mir auch bewusst
+
+446
+00:42:21,060 --> 00:42:25,650
+aber es muss natürlich nicht so obvious
+sein weil wenn man wirklich nur das Binary
+
+447
+00:42:25,650 --> 00:42:31,170
+ausliest und danach den Klartext Schlüssel
+hat dann ist es natürlich sehr verdächtig
+
+448
+00:42:31,170 --> 00:42:35,250
+und man findet schon beim Durchscrollen
+durchs Binary oder wenn man einfach
+
+449
+00:42:35,250 --> 00:42:41,310
+strings eingibt. Wenn man alleine nur was
+drüber xored hätte wäre es schon nicht so
+
+450
+00:42:41,310 --> 00:42:47,830
+auffällig wie es tatsächlich wirklich ist.
+Herald: Ok, Dankeschön. Ich nehme erst mal
+
+451
+00:42:47,830 --> 00:42:51,920
+das Mikro Nr. 7. Da wartet schon jemand
+länger. Die Frage bitte.
+
+452
+00:42:51,920 --> 00:42:55,310
+Mikro 7: Ja das ist jetzt fast eher eine
+Anmerkung. Zudem...
+
+453
+00:42:55,310 --> 00:42:58,670
+Herald: Das tut mir leid aber wir nehmen
+leider keine Anmerkungen. Wenn du eine
+
+454
+00:42:58,670 --> 00:43:02,690
+Frage hast dann melde dich bitte mit einer
+Frage. Kommentare möchten wir bitte nicht.
+
+455
+00:43:02,690 --> 00:43:06,680
+Dankeschön. Dann Mikro Nummer 8.
+Bitteschön, danke.
+
+456
+00:43:06,680 --> 00:43:12,980
+Mikro 8: Der MQTT-Request geht ja direkt
+an den Cloudhersteller oder?
+
+457
+00:43:12,980 --> 00:43:18,920
+Michael: Genau, also die MQTT ist im
+Endeffekt das Protokoll das verwendet wird
+
+458
+00:43:18,920 --> 00:43:24,050
+um aus dem Internet ins lokale Netzwerk zu
+kommen und da wird quasi ein MQTT Tunnel
+
+459
+00:43:24,050 --> 00:43:29,681
+aufgestellt und es gibt ein Topic das
+quasi subscribed wird von der Lampe selbst
+
+460
+00:43:29,681 --> 00:43:34,590
+wo es quasi Befehle annimmt. Und einer der
+verwendet wird um Publishes zu machen wo
+
+461
+00:43:34,590 --> 00:43:40,140
+Statusmeldung rausgehen.
+Herald: Ok danke, wir haben noch eine
+
+462
+00:43:40,140 --> 00:43:44,550
+Frage auf der 5, die wartet schon
+länger, Bitteschön.
+
+463
+00:43:44,550 --> 00:43:50,080
+Mikro 5: Danke sehr, gibt es irgendwelche
+Einschränkungen wenn ich ein Internet of
+
+464
+00:43:50,080 --> 00:43:53,300
+Things WLAN aufbaue mit sehr
+eingeschränktem Internetzugang?
+
+465
+00:43:53,300 --> 00:44:01,250
+Michael: Es ist tatsächlich möglich auch
+mit der Firmware die drauf ist einen
+
+466
+00:44:01,250 --> 00:44:04,730
+lokalen Betrieb zu machen. Ich glaube
+nicht mit allen Geräten die ich getestet
+
+467
+00:44:04,730 --> 00:44:12,810
+habe, aber die Lampe ist noch auf dem Port
+6668 offen; nimmt da sehr ähnliche Befehle
+
+468
+00:44:12,810 --> 00:44:19,300
+an und man kann sie quasi auch damit
+selbst steuern. Auch mit dem selben local
+
+469
+00:44:19,300 --> 00:44:23,780
+key werden die Daten dann verschlüsselt
+und das heißt ist es auch möglich wenn man
+
+470
+00:44:23,780 --> 00:44:28,710
+der Lampe selbst das Internet abstellt die
+lokal mit dem Handy zu steuern.
+
+471
+00:44:28,710 --> 00:44:36,330
+Herald: Ok, Dankeschön. Ich würde sagen
+drei Fragen machen wir noch.
+
+472
+00:44:36,330 --> 00:44:38,630
+Michael: ja gerne.
+Herald: Ok, dann hier vorne die 1 bitte.
+
+473
+00:44:38,630 --> 00:44:42,870
+Mikro 1: Hast du dir angeschaut wie die
+Sicherheit auf der Serverseite von diesem
+
+474
+00:44:42,870 --> 00:44:47,050
+Cloud-Anbieter ist. Also ob man da was
+machen kann, ob man in die Daten von
+
+475
+00:44:47,050 --> 00:44:52,130
+Fremdgeräten kommt und ob man
+potentiell über das MQTT mit fremden
+
+476
+00:44:52,130 --> 00:44:55,900
+Devices sprechen kann.
+Michael: Also ich hab mal probiert einen
+
+477
+00:44:55,900 --> 00:44:59,900
+MQTT zu einem anderen Device zu schicken.
+Das hat nicht funktioniert aber ich habe
+
+478
+00:44:59,900 --> 00:45:05,620
+auch nicht weiter geschaut, also nicht so
+genau und auch nicht probiert um
+
+479
+00:45:05,620 --> 00:45:09,440
+irgendwelche Accounts zu kapern.
+Mikro 1: Danke.
+
+480
+00:45:09,440 --> 00:45:14,040
+Herald: Ok, wir haben dann ein bisschen
+Zeit. Deswegen wir machen noch ein paar
+
+481
+00:45:14,040 --> 00:45:18,330
+Fragen mehr wenn Dir das recht ist
+Michael. Ok, dann würde ich jetzt den
+
+482
+00:45:18,330 --> 00:45:19,880
+Signalengel nochmal einen leuchten
+lassen.
+
+483
+00:45:19,880 --> 00:45:25,380
+Signalengel: Die Frage was wäre in der
+Praxis Update best practices für IOT-
+
+484
+00:45:25,380 --> 00:45:30,470
+Devices? Wenn du Autoupdates machst bist
+du angreifbar, wenn du keine Autoupdates
+
+485
+00:45:30,470 --> 00:45:34,660
+machst bist du nie gepatched.
+Michael: Ja also eigentlich ist das eine
+
+486
+00:45:34,660 --> 00:45:40,570
+sehr schwere Frage weil man wirklich das
+schlecht realisieren kann aber trotzdem
+
+487
+00:45:40,570 --> 00:45:45,070
+denke ich dass es Möglichkeiten gibt wo
+dann zum Beispiel das Update von der App
+
+488
+00:45:45,070 --> 00:45:50,011
+kommt und die dann so ist dass der User
+definitiv Kontrolle darüber hat und das
+
+489
+00:45:50,011 --> 00:45:55,410
+auch mitbekommt. Natürlich ist es immer
+eine Implementationsache und relativ
+
+490
+00:45:55,410 --> 00:46:00,520
+schwierig Updates anzubieten für solche
+Geräte.
+
+491
+00:46:00,520 --> 00:46:07,740
+Herald: Ok, ich glaube Mikro 7 ist noch
+jemand. Deine Frage bitte.
+
+492
+00:46:07,740 --> 00:46:09,920
+Mikro 7: Es war die gleiche Frage.
+Michael: Ja okay.
+
+493
+00:46:09,920 --> 00:46:14,110
+Herald: Es war die gleiche Frage ok dann
+Mikro 8.
+
+494
+00:46:14,110 --> 00:46:18,641
+Michael: Ich glaub da vorne im Eck sind
+noch ganz viele.
+
+495
+00:46:18,641 --> 00:46:19,760
+*Lachen*
+Herald: Hat jemand aufgegeben. Okay es
+
+496
+00:46:19,760 --> 00:46:23,040
+blinkt noch, hab ich das richtig gesehen?
+Michael: Ja, hier vorne.
+
+497
+00:46:23,040 --> 00:46:30,450
+Herald: Ah ok, die 3 Bitteschön, danke.
+Mikrofon 3: Thank you, so this cleartext
+
+498
+00:46:30,450 --> 00:46:37,690
+local key of HTTP how often is it sent?
+Only the first time or does it send more
+
+499
+00:46:37,690 --> 00:46:40,750
+often?
+Michael: This is basically only during the
+
+500
+00:46:40,750 --> 00:46:49,900
+registration but there's more clear
+messages. I mean HTTP in general is not
+
+501
+00:46:49,900 --> 00:46:57,590
+encrypted when the cloud sends something
+to the bulb. But the keys are only
+
+502
+00:46:57,590 --> 00:47:07,250
+transmitted during activation.
+Herald: Ok, vielen Dank. Wir haben da noch
+
+503
+00:47:07,250 --> 00:47:16,090
+ein Licht. Deine Frage bitte noch.
+Signalangel: Ist der Sprecher bereits
+
+504
+00:47:16,090 --> 00:47:26,464
+einem sicheren IOT-Gegenstand begegnet?
+Michael: Vielleicht aber nicht meines Wissens.
+
+505
+00:47:26,464 --> 00:47:34,621
+*Lachen* & *Aplausos*
+
+506
+00:47:34,621 --> 00:47:36,360
+Herald: Mikro 3 Bitteschön.
+
+507
+00:47:36,360 --> 00:47:44,190
+Mikro 3: Gibt es Anzeichen dass die Daten
+der User verkauft werden? Und wenn nein
+
+508
+00:47:44,190 --> 00:47:48,780
+wie leicht könnte man das rauskriegen?
+Also ich denke an einen Talk den es hier Mal
+
+509
+00:47:48,780 --> 00:47:54,210
+gab, der hieß build your own NSA. Da
+hat ne Fakefirma die Daten versucht zu
+
+510
+00:47:54,210 --> 00:47:59,320
+kaufen. Also das wär ja möglich.
+Michael: Also alles was ich jetzt sagen
+
+511
+00:47:59,320 --> 00:48:03,930
+würde wär Spekulation und das will ich
+eigentlich nicht, aber es ist sehr
+
+512
+00:48:03,930 --> 00:48:08,610
+auffällig wie viel Geld hinter den Firmen
+steckt und wie viele Geräte sie verkaufen
+
+513
+00:48:08,610 --> 00:48:14,030
+und irgendwie geht bei mir die Mathematik
+nicht auf. Und es geht für mich um mehr
+
+514
+00:48:14,030 --> 00:48:18,040
+Geld als man mit solchen Geräten verdienen
+kann. Aber wie gesagt es ist alles
+
+515
+00:48:18,040 --> 00:48:21,930
+Spekulation und dazu kann ich dann weiter
+nichts sagen.
+
+516
+00:48:21,930 --> 00:48:24,140
+Herald: Wär doch mal eine gute Idee für
+einen neuen Talk.
+
+517
+00:48:24,140 --> 00:48:25,830
+Michael: Ja.
+Herald: Vielleicht mag das ja mal jemand
+
+518
+00:48:25,830 --> 00:48:28,900
+eruieren. Eine Frage haben wir noch an der
+7. Bitteschön.
+
+519
+00:48:28,900 --> 00:48:35,150
+Mikro 7: Bin ich richtig in der Annahme
+dass Zigbee-Geräte nicht betroffen sind?
+
+520
+00:48:35,150 --> 00:48:44,040
+Michael: Das kommt drauf an ob der Zigbee-
+Server der es dann ans Internet ankuppelt
+
+521
+00:48:44,040 --> 00:48:49,310
+damit betroffen ist. Weil das gibt's
+natürlich auch, also wenn die Bridge
+
+522
+00:48:49,310 --> 00:48:55,450
+selbst diese Technologie z.B. benutzt dann
+ist es das gleiche Spiel weil dann ist das
+
+523
+00:48:55,450 --> 00:49:01,250
+Opfer nicht mehr die Glühbirne selbst
+sondern die Bridge.
+
+524
+00:49:01,250 --> 00:49:06,120
+Herald: Mmh. Mikro 1 haben wir noch eine
+Frage. Bitteschön.
+
+525
+00:49:06,120 --> 00:49:09,681
+Mikro 1: Ich hätte eine kleine Frage zu
+dem smartconfig. Bei dem smartconfig ist
+
+526
+00:49:09,681 --> 00:49:14,010
+es ja so das die Konfiguration über SSID
+usw. zu dem IOT device geschickt wird.
+
+527
+00:49:14,010 --> 00:49:16,500
+Michael: Ja.
+Mikro 1: Inwiefern kann ich einfach in,
+
+528
+00:49:16,500 --> 00:49:22,100
+sagen wir mal, einem großen Wohnblock
+einfach selber ein Expressif-Gerät
+
+529
+00:49:22,100 --> 00:49:25,360
+simulieren und die Informationen abgreifen
+die das dann rumschickt.
+
+530
+00:49:25,360 --> 00:49:30,320
+Michael: Você não precisa 
+simular muito porque o protocolo é 
+
+531
+00:49:30,320 --> 00:49:37,700
+todo aberto e no final é 
+muito fácil escutar esses processos 
+
+532
+00:49:37,700 --> 00:49:42,660
+de ativação e exibi-los em texto simples. Isso 
+significa que pode-se descriptografar 
+
+533
+00:49:42,660 --> 00:49:45,550
+facilmente os dados de acesso
+WLAN e também o token.
+
+534
+00:49:45,550 --> 00:49:51,870
+Herald: Ok, temos mais uma pergunta
+da Internet. Por favor faça a pergunta,
+
+535
+00:49:51,870 --> 00:49:54,180
+Signalengel.
+Signalengel: Desculpe, não, 
+
+536
+00:49:54,180 --> 00:49:57,810
+não é outra pergunta da internet.
+Herald: Ok, dann würde ich sagen wir haben
+
+537
+00:49:57,810 --> 00:50:02,190
+auf der 1 noch eine Frage und dann kann
+man auch langsam Schluss machen. Deine
+
+538
+00:50:02,190 --> 00:50:04,940
+Frage bitte.
+Mikro 1: Foi dito que também 
+
+539
+00:50:04,940 --> 00:50:10,030
+existem prestadores alemães que 
+utilizam este serviço. É legal, 
+
+540
+00:50:10,030 --> 00:50:13,940
+de acordo com a lei alemã de proteção 
+de dados, ter esse direito de excluir dados?
+
+541
+00:50:13,940 --> 00:50:18,210
+Michael: Então não sou especialista 
+nisso. Meu colega trabalhou nisso
+de..
+
+542
+00:50:18,210 --> 00:50:26,400
+um pouco mais ao longo do 
+tempo.. Então quando eu 
+
+
+543
+00:50:26,400 --> 00:50:31,960
+analisei todas as coisas e talvez 
+eu o encoraje a dar uma palestra 
+
+544
+00:50:31,960 --> 00:50:36,310
+sobre isso também. Porque 
+há realmente muitas coisas e 
+
+
+545
+00:50:36,310 --> 00:50:40,250
+acho que você pode falar por muito e muito tempo 
+disso e porque há coisas 
+
+546
+00:50:40,250 --> 00:50:43,290
+grotescas sobre os 
+regulamentos de proteção de dados
+
+547
+00:50:43,290 --> 00:50:48,440
+Herald: Parece uma interessante
+continuação. Ok.
+
+548
+00:50:48,440 --> 00:50:50,500
+*Aplausos*
+
+549
+00:50:50,500 --> 00:50:51,607
+Herald: Este é o seu aplauso
+
+550
+00:50:51,607 --> 00:50:58,470
+*Aplausos*
+
+551
+00:50:58,470 --> 00:51:18,010
+*35c3 Musica Encerramento*
+
+552
+00:51:18,010 --> 00:51:22,000
+Legendas criadas por 
+Guilherme V.Otta em 2024.
