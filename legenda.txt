@@ -992,87 +992,90 @@ Trotzdem hatte ich eine eigene, neue
 
 195
 00:18:04,480 --> 00:18:08,370
-Motivation. Und zwar erstens mal, ist es
-denn möglich, diese ganzen Geräte, wie sie
+Motivation. Em primeiro lugar,
+é possível usar todos esses 
 
 196
 00:18:08,370 --> 00:18:14,610
-alle hier sind, auch ohne die Cloud zu
-betreiben. Und zweitens wollte ich
+dispositivos, como estão aqui, 
+sem nuvem. E em segundo lugar,
+
 
 197
 00:18:14,610 --> 00:18:21,269
-natürlich auch noch mal den wirklichen
-Proof of Concept von dem Trojaner haben.
+é claro, eu também queria ter uma 
+prova real de conceito do Trojan.
 
 198
 00:18:21,269 --> 00:18:27,360
 Und das heißt es ging jetzt für mich
-nochmal eine Runde weiter. So, dafür habe
+nochmal eine Runde weiter. Então,
+
 
 199
 00:18:27,360 --> 00:18:32,460
-ich mir ein kleines Testsetup aufgebaut.
-Ich habe einfach einen Raspberry Pi mit
+fiz uma testesetup para isso.
+Usei um Raspberry Pi 
 
 200
 00:18:32,460 --> 00:18:36,870
-einem Kali Linux benutzt und da einen
-Software-Access Point laufen lassen, einen
+com Kali Linux e fiz um 
+ponto de acesso por software, 
 
 201
 00:18:36,870 --> 00:18:43,470
-hostapd. Dann brauchte ich meine eigenen
-DNS-Server, um auch Anfragen umleiten zu
+um hostapd. Então eu precisei 
+de meus servidores DNS para poder 
 
 202
 00:18:43,470 --> 00:18:49,660
-können. Hab den eigenen HTTP-Server
-gebraucht, Und den MQTT-Broker und zum
+redirecionar solicitações. Precisei também 
+de um servidor HTTP, e um Broker MQTT e para
 
 203
 00:18:49,660 --> 00:18:54,180
-Analysieren habe ich Wireshark benutzt und
-man-in-the-middle-Attacken mit bettercap
+análise tenho usado Wireshark e para o
+ataque man-in-the-middle usei o bettercap.
 
 204
 00:18:54,180 --> 00:19:00,100
-gemacht. Ja, dann ging es erst einmal zur
-Netzwerkanalyse, Ich habe mir erst einmal
+Então primeiro fui para a análise 
+da rede.Primeiro observei 
 
 205
 00:19:00,100 --> 00:19:05,320
-angeguckt, was geht denn da rein und raus
-auf der Netzwerk Seite. Es ist ganz
+o que entra e sai do 
+lado da rede. É bem 
 
 206
 00:19:05,320 --> 00:19:09,700
-einfach. Es gibt eigentlich drei Sachen:
-Es gibt DNS-Requests. Es gibt HTTP
+simples. Na verdade, existem três coisas:
+Tem DNS-Requests. Há requisições HTTP
 
 207
 00:19:09,700 --> 00:19:15,150
-Anfragen. Die sind eigentlich meistens
-unverschlüsselt bzw. auch die wichtigen
+Na verdade, eles são em sua maioria 
+não criptografados. 
 
 208
 00:19:15,150 --> 00:19:21,330
-Sachen, die zum Beispiel Schlüssel
-enthalten, sind dann unverschlüsselt. Und
+O mais importante, por exemplo, as chaves
+são descriptografados. E o
 
 209
 00:19:21,330 --> 00:19:27,769
-MQTT ist auch vorhanden und verschlüsselt.
-Aber es wird auch, wenn in der Lampe
+MQTT também está disponível e descriptografado.
+Mas mesmo que https e MQTTs sejam 
+
 
 210
 00:19:27,769 --> 00:19:39,941
-selbst https und die MQTTs implementiert
-sind, einfach nicht benutzt. Und das ist
+implementados na própria lâmpada, 
+eles não são usados. E isto é
 
 211
 00:19:39,941 --> 00:19:43,390
-wieder "sehr sicher". Wie gesagt, in dem
+novamente "muito seguro". Wie gesagt, in dem
 Feld. man sieht es hier nicht, aber da ist
 
 212
@@ -1223,17 +1226,16 @@ das funktioniert im Endeffekt so, auf dem
 241
 00:22:42,120 --> 00:22:47,429
 Handy wird gefragt, ob das Upgrade
-durchgeführt werden soll. Dann wird ein
+durchgeführt werden soll. Então 
 
 242
 00:22:47,429 --> 00:22:51,710
-Trigger ausgelöst und der Trigger wird an
-die Lampe gesendet und die Lampe fragt
+um trigger é acionado e o trigger é enviado para a lâmpada e a lâmpada pergunta 
 
 243
 00:22:51,710 --> 00:23:01,260
-über HTTP, wo gibt's die neue Firmware und
-welche Version hat die, und so weiter.
+via HTTP onde está o novo firmware e 
+qual versão é ele, e assim por diante.
 
 244
 00:23:01,260 --> 00:23:06,620
@@ -1521,17 +1523,17 @@ Internet dann einen Rechner, das sehen wir
 
 301
 00:28:55,211 --> 00:29:00,279
-jetzt gleich. Dann hab ich einfach mal
-eine IP-Abfrage gemacht. Genau. Jetzt
+jetzt gleich. Então eu fiz uma
+simples consulta de IP. Agora 
 
 302
 00:29:00,279 --> 00:29:07,919
-verbindet sich die Lampe zu meinem Server
-und ich mache unten eine Abfrage der IP,
+a lâmpada se conecta ao meu servidor
+e faço uma consulta do IP abaixo,
 
 303
 00:29:07,919 --> 00:29:13,620
-dass ist also die externe IP, ist in dem
+isso é também um IP externo, ist in dem
 Fall 213 irgendwas; jetzt mache ich das
 
 304
@@ -1580,27 +1582,27 @@ Netzwerk ganz einfach bewegen.
 
 313
 00:30:14,009 --> 00:30:21,440
-Die große Frage ist: Warum ist es so
-gefährlich? Es ist eigentlich so, man weiß
+A grande pergunta é: Por que 
+é tão perigoso? Na verdade, você nunca sabe 
 
 314
 00:30:21,440 --> 00:30:26,379
-nie was in so einem Gerät drin steckt und
-gerade auch dieser Button "Silent Upgrade"
+o que há dentro de um dispositivo 
+como este e esse botão "Silent Upgrade"
 
 315
 00:30:26,379 --> 00:30:31,289
-hat mich sehr verwundern lassen und in
-meinem Fall war es noch nicht einmal so,
+em particular realmente me surpreendeu 
+e no meu caso nem sequer houve 
 
 316
 00:30:31,289 --> 00:30:35,640
-dass dass zum Upgraden der Firmware der
-Lampe irgendeine Bestätigung vom User
+qualquer confirmação ao usuário para 
+atualizar o firmware da lâmpada.
 
 317
 00:30:35,640 --> 00:30:40,970
-kommen musste oder so weiter. Das heißt
+ Das heißt
 man, man bekommt es nicht mit und man kann
 
 318
@@ -2018,27 +2020,27 @@ Michael: Das ist natürlich eine sehr
 401
 00:38:35,060 --> 00:38:40,420
 interessante Idee und man kann da noch
-viel mehr damit machen. Theoretisch könnte
+viel mehr damit machen. Teoricamente, você pode
 
 402
 00:38:40,420 --> 00:38:44,970
-man auch sagen, man macht nur einen
-Katalog aus verschiedenen Firmwaren die
+dizer que faz apenas uma
+Catálogo de diferentes firmwares 
 
 403
 00:38:44,970 --> 00:38:47,830
-für verschiedene Modelle eben
-funktionieren und macht da eben solche
+que funcionam para diferentes 
+modelos e inclui coisas assim.
 
 404
 00:38:47,830 --> 00:38:53,730
-Sachen mit rein. Und dann könnte man das
-sehr gut betreiben wobei aber die ja die
+E então você poderia usa-lo 
+muito bem, embora a 
 
 405
 00:38:53,730 --> 00:38:58,880
-Power oder die CPU Power doch sehr
-limitiert ist.
+velocidade ou a potência da 
+CPU sejam muito limitadas.
 
 406
 00:38:58,880 --> 00:39:08,790
@@ -2471,27 +2473,28 @@ jemand. Deine Frage bitte.
 
 492
 00:46:07,740 --> 00:46:09,920
-Mikro 7: Es war die gleiche Frage.
-Michael: Ja okay.
+Mikro 7: Foi a mesma pergunta.
+Michael: Ok.
 
 493
 00:46:09,920 --> 00:46:14,110
-Herald: Es war die gleiche Frage ok dann
+Herald: Foi a mesma pergunta dele.
 Mikro 8.
 
 494
 00:46:14,110 --> 00:46:18,641
-Michael: Ich glaub da vorne im Eck sind
-noch ganz viele.
+Michael:Acho que ainda há muitos 
+deles no canto.
+
 
 495
 00:46:18,641 --> 00:46:19,760
 *Lachen*
-Herald: Hat jemand aufgegeben. Okay es
+Herald: Alguém desistiu. Ok
 
 496
 00:46:19,760 --> 00:46:23,040
-blinkt noch, hab ich das richtig gesehen?
+ainda está piscando, vi corretamente?
 Michael: Ja, hier vorne.
 
 497
@@ -2634,28 +2637,27 @@ Frage. Bitteschön.
 
 525
 00:49:06,120 --> 00:49:09,681
-Mikro 1: Ich hätte eine kleine Frage zu
-dem smartconfig. Bei dem smartconfig ist
+Mikro 1: Tenho uma pequena dúvida . 
+Com smartconfig, na configuração, 
 
 526
 00:49:09,681 --> 00:49:14,010
-es ja so das die Konfiguration über SSID
-usw. zu dem IOT device geschickt wird.
+o SSID, senha, IP etc
+é enviado para o dispositivo IOT.
 
 527
 00:49:14,010 --> 00:49:16,500
-Michael: Ja.
-Mikro 1: Inwiefern kann ich einfach in,
+Michael: Sim.
+Mikro 1: Até que ponto posso 
 
 528
 00:49:16,500 --> 00:49:22,100
-sagen wir mal, einem großen Wohnblock
-einfach selber ein Expressif-Gerät
+simplesmente simular um dispositivo Expressif, 
+digamos, para meu vizinho do apartamentos
 
 529
 00:49:22,100 --> 00:49:25,360
-simulieren und die Informationen abgreifen
-die das dann rumschickt.
+e coletar as informações que ele envia.
 
 530
 00:49:25,360 --> 00:49:30,320
